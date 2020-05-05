@@ -1,0 +1,16 @@
+(executable
+  (name app)
+  (libraries
+    libenigma
+
+    core_kernel
+  )
+  ;(preprocess (pps
+  ;))
+  (modes exe)
+  (ocamlopt_flags -O3 -unbox-closures)
+)
+
+(env
+  (dev
+    (flags (:standard -warn-error -A))))

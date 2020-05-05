@@ -1,0 +1,23 @@
+opam-version: "2.0"
+maintainer: "Asemio"
+authors: [
+  "Asemio"
+]
+synopsis: "Asemio"
+description: """
+Asemio
+"""
+license: "Asemio"
+tags: []
+homepage: "https://github.com/SGrondin/enigma"
+doc: "https://github.com/SGrondin/enigma"
+bug-reports: "https://github.com/SGrondin/enigma/issues"
+depends: [
+  "ocaml" {>= "4.08.1"}
+  "dune" {build & >= "1.9.0"}
+
+  "core_kernel"
+  "lwt"
+  "lwt_ppx"
+  "utop"
+]

@@ -1,0 +1,12 @@
+(library
+  (name libenigma)
+  (libraries
+    core_kernel
+  )
+  ;(preprocess (pps
+  ;))
+  (ocamlopt_flags -O3 -unbox-closures))
+
+(env
+  (dev
+    (flags (:standard -warn-error -A))))

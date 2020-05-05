@@ -1,0 +1,14 @@
+(library
+  (name libutils)
+  (libraries
+    core_kernel
+    lwt
+    lwt.unix
+  )
+  ;(preprocess (pps
+  ;))
+  (ocamlopt_flags -O3 -unbox-closures))
+
+(env
+  (dev
+    (flags (:standard -warn-error -A))))
